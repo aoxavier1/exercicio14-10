@@ -1,11 +1,13 @@
+import javax.swing.JOptionPane;
+
+
 public class Natal extends CartaoWeb {
-	public Natal(String destinatario){
-		setDestinatario(destinatario);
-	}
-	
-	protected String retornarMensagem(String remetente){
-		return "\nFeliz Natal " + getDestinatario() 
-			+ " para você e toda a sua família. São os votos mais sinceros de " 
-			+ remetente + ".\n";
-	}
+    
+    public void Natal (String destinario,String remetente){       
+    }
+    public void retornarMensagem(String remetente, String destinatario) {
+        String mensagem = String.format("Feliz natal!"+ destinario +" Atenciosamente", remetente);
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+    
 }
